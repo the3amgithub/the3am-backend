@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@creazy231/strapi-plugin-apollo-sandbox": "^0.0.13",
-    "@strapi/plugin-graphql": "4.14.3",
-    "@strapi/plugin-i18n": "4.14.3",
+    "@strapi/plugin-graphql": "^4.7.1",
+    "@strapi/plugin-i18n": "^4.7.1",
     "@strapi/plugin-users-permissions": "4.14.3",
-    "@strapi/strapi": "4.14.3",
-    "better-sqlite3": "8.6.0"
+    "@strapi/strapi": "^4.7.1",
+    "better-sqlite3": "8.6.0",
+    "pg": "^8.11.3"
   },
   "author": {
     "name": "A Strapi developer"
