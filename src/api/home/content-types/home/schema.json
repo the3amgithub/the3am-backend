@@ -12,28 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "banner": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "description": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "boilerRoom": {
       "type": "json"
     },
@@ -42,6 +20,12 @@
     },
     "video": {
       "type": "json"
+    },
+    "banner": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }

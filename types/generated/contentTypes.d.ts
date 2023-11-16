@@ -683,13 +683,14 @@ export interface ApiContactContact extends Schema.CollectionType {
     singularName: 'contact';
     pluralName: 'contacts';
     displayName: 'Contact';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    banner: Attribute.Media;
     information: Attribute.JSON;
+    banner: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -720,12 +721,12 @@ export interface ApiEventEvent extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    banner: Attribute.Media;
     event_details: Attribute.Relation<
       'api::event.event',
       'oneToMany',
       'api::event-detail.event-detail'
     >;
+    banner: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -750,6 +751,7 @@ export interface ApiEventDetailEventDetail extends Schema.CollectionType {
     singularName: 'event-detail';
     pluralName: 'event-details';
     displayName: 'EventDetail';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -759,13 +761,13 @@ export interface ApiEventDetailEventDetail extends Schema.CollectionType {
     about: Attribute.Text;
     date: Attribute.String;
     location: Attribute.String;
-    img: Attribute.Media;
     address: Attribute.JSON;
     event: Attribute.Relation<
       'api::event-detail.event-detail',
       'manyToOne',
       'api::event.event'
     >;
+    img: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -796,11 +798,11 @@ export interface ApiHomeHome extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    banner: Attribute.Media;
-    description: Attribute.Media;
     boilerRoom: Attribute.JSON;
     upcomingEvents: Attribute.JSON;
     video: Attribute.JSON;
+    banner: Attribute.String;
+    description: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

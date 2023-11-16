@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event-detail",
     "pluralName": "event-details",
-    "displayName": "EventDetail"
+    "displayName": "EventDetail",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,16 +24,6 @@
     "location": {
       "type": "string"
     },
-    "img": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "address": {
       "type": "json"
     },
@@ -41,6 +32,9 @@
       "relation": "manyToOne",
       "target": "api::event.event",
       "inversedBy": "event_details"
+    },
+    "img": {
+      "type": "string"
     }
   }
 }

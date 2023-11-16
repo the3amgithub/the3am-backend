@@ -12,22 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "banner": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "event_details": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::event-detail.event-detail",
       "mappedBy": "event"
+    },
+    "banner": {
+      "type": "string"
     }
   }
 }
