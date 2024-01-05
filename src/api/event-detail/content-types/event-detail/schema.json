@@ -38,6 +38,9 @@
     },
     "tableImg": {
       "type": "text"
+    },
+    "bookingLink": {
+      "type": "text"
     }
   }
 }

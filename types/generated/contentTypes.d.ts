@@ -769,6 +769,7 @@ export interface ApiEventDetailEventDetail extends Schema.CollectionType {
     >;
     img: Attribute.String;
     tableImg: Attribute.Text;
+    bookingLink: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
