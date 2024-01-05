@@ -768,6 +768,7 @@ export interface ApiEventDetailEventDetail extends Schema.CollectionType {
       'api::event.event'
     >;
     img: Attribute.String;
+    tableImg: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -799,7 +800,6 @@ export interface ApiHomeHome extends Schema.CollectionType {
   };
   attributes: {
     boilerRoom: Attribute.JSON;
-    upcomingEvents: Attribute.JSON;
     video: Attribute.JSON;
     banner: Attribute.String;
     description: Attribute.String;

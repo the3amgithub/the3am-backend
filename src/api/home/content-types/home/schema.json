@@ -15,9 +15,6 @@
     "boilerRoom": {
       "type": "json"
     },
-    "upcomingEvents": {
-      "type": "json"
-    },
     "video": {
       "type": "json"
     },

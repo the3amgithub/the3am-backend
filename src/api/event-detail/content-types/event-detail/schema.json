@@ -35,6 +35,9 @@
     },
     "img": {
       "type": "string"
+    },
+    "tableImg": {
+      "type": "text"
     }
   }
 }
