@@ -41,6 +41,12 @@
     },
     "bookingLink": {
       "type": "text"
+    },
+    "artists": {
+      "type": "json"
+    },
+    "waLink": {
+      "type": "text"
     }
   }
 }
